@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+:root {
+  --main-font:  "Orbitron", sans-serif;
+  --font-color: white;
+  --main-clr: darkblue;
+}
+button {
+  font-family: var(--main-font);
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-font);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 450px;
+  width: auto;
+  border: 2px solid var(--main-clr);
+  border-radius: 1em;
+  padding: 0.5em;
+  background-color: black;
+  gap: 5px;
+  box-shadow: 0 5px 10px 7px gray;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  color: var(--font-color);
+  height: 100px;
+  width: 100%;
+  margin: 10px;
+  margin-top: 2px;
+  border-radius: 1em;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  letter-spacing: 5px;
+  font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
+.numbers {
+  gap: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.numbers button {
+  height: 5em;
+  width: 5em;
+  background-color: var(--main-clr);
+  color: var(--font-color);
+  border-radius: 10px;
+  border: 1px solid black;
+  font-weight: 600;
 }
+
+.digits {
+  display: flex;
+  gap: 5px;
+}
+
+.digits button {
+  height: 5em;
+  width: 5em;
+  background-color: var(--main-clr);
+  border-radius: 10px;
+  border: none;
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
