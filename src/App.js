@@ -27,7 +27,7 @@ function App() {
       <div className="calculator">
         <div className="screen">{screenValue}</div>
         <div className="digits">
-          <button onClick={clear} style={{ color: "red", width: "10.5em" }}>
+          <button onClick={clear} style={{ color: "red", width: "12.5em" }}>
             CLEAR
           </button>
           <button onClick={backspace}>C</button>
@@ -160,7 +160,7 @@ function App() {
             >
               .
             </button>
-            <button onClick={calculator} style={{ width: "10.5em" }}>
+            <button onClick={calculator} style={{ width: "11.5em" }}>
               =
             </button>
           </div>
